@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>A simple page</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+</head>
+<body>
+    <h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	
+	<div class="quotation">A div</div>
+	<p id="content">A paragraph</p>
+	<div>
+        <h2>
+            <p> i will not be effected by a direct child selector</p>
+        </h2>
+		<p class="quotation">A paragraph inside a div</p>
+	</div>	
+    
+    <div>
+        <h2>
+            <p> i will not be effected by a direct child selector thus my color is blue</p>
+        </h2>
+		<p>I will be effected by direct child selector, thus my color is red</p>
+	</div>	
+    
+    <!-- immediatly after selector -->
+    <p>Selects all <i>p elements</i> that are placed immediately after <i>div elements</i></p>
+    <div>
+        <h2>
+            <p> i am not immediatly after and will not be effected</p>
+        </h2>
+		<p>i am not immediatly after and will not be effected</p>
+	</div>	
+    <div>
+        <p>i am not immediatly after and will be effected</p>
+        <h2>
+            <p> i am not immediatly after and will not be effected</p>
+        </h2>
+		<p>i am not immediatly after and will not be effected</p>
+	</div>
+    <p>i am immediatly after and will be effected</p>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿body { 
+    background-color:#cccc99;       
+}
+
+p
+{
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: Black;
+    border-width: 2mm;
+    width: 200px;
+}
+
+div
+{
+    width:50%;
+}
+
+h1, h2 {
+    background-color: #0dcc99
+}
+
+
+#content { background-color: #0dcc99 }
+.quotation {background-color: #0000c0 }
+
+div p {background-color: #00f;}
+div > p {background-color: #f00;}
+
+div + p {background-color: #0f0;}
