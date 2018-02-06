@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a:before {
+            background-color: black;
+            text-align:center;
+            color: white;
+            width:1.5em;
+            display:inline-block;
+        }
+        a[href^="mailto:"]:before {
+            content : "\2709";
+        }
+        a[href^="tel:"]:before {
+            content : "\2706";
+        }
+
+        a[href$="vcs"]:before {
+            content : "\1F4C5";
+        }
+    </style>
+</head>
+<body>
+<a href="mailto:aa@bb.com">aa@bb.com</a>
+<br >
+<a href="tel:12345">123456</a>
+<br>
+<a href="exaple1.vcs">calender time</a>
+</body>
+</html>

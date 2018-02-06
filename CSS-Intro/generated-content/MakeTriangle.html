@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Make a traiangle
+-->
+<html>
+<head>
+    <style>
+        p:before {
+            width:0;
+            height:0;
+            border: 20px solid transparent;
+            border-left-color:red;
+            position:absolute;
+            content:'';
+        }
+        div p:before {
+            width:0;
+            height:0;
+            border: 20px solid transparent;
+            border-width: 50px 100px;
+            border-bottom-color:green;
+            position:absolute;
+            content:'';
+        }
+        div {
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+
+<p>Hello triangle</p>
+<div>
+<p>Hello triangle</p>   
+</div>
+
+</body>
+</html>

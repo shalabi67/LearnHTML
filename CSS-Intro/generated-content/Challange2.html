@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a[href^="http://"]:hover, a[href^="https://"]:hover {
+            position:relative;
+        }
+        a[href^="http://"]:hover:after, a[href^="https://"]:hover:after {
+            background-color: black;
+            text-align:center;
+            color: white;
+            position:absolute;
+            top:1em;
+            content : attr(href);
+        }
+    </style>
+</head>
+<body>
+<a href="http://aa.bb.com">external site</a>
+<br >
+<a href="/aa.bb.com">internal site</a>
+<br >
+<a href="https://aa.bb.com">external site</a>
+<br >
+<a href="/aa.bb.com">internal site</a>
+<br >
+<a href="/aa.bb.com">internal site</a>
+<br >
+<a href="http://aa.bb.com">external site</a>
+<br >
+<a href="http.bb.com">internal site</a>
+<br >
+<a href="https.bb.com">internal site</a>
+<br >
+</body>
+</html>

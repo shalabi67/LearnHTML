@@ -28,3 +28,18 @@ em {
 .greenBox {
      background: #5b8054;  
 }
+
+.redBox {
+    background: #fb8054; 
+    position: fixed;
+    top:400px;
+    left:0px
+}
+
+.container {
+    background: rgba(0,100,100,.4);
+    height:200px;
+    width:200px;
+    margin-top: 100px;
+    position:absolute;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Make a Circle
+-->
+<html>
+<head>
+    <style>
+        .circle, .circle:before, .circle:after {
+            border-radius: 50%;
+            border: 5px solid blue;
+            position:relative;
+            
+        }
+        .circle:before {
+            content:'';
+            position:absolute;
+            width:40px;
+            height:40px;
+            left:20px;
+            bottom: -40px;
+        }
+        div {
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+
+<p class="circle">Hello triangle</p>
+
+
+</body>
+</html>
